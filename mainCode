@@ -1,0 +1,92 @@
+#Inputs
+studentName = input("Enter Student Name:  ")
+quizGradeMax = float(input("Please enter the total possible quiz grade:  "))
+quizWeight = float(input("Please enter the quiz weight in decimal form:  "))
+quizGradeOne = float(input("Please enter the first quiz grade:  "))
+quizGradeTwo = float(input("Please enter the second quiz grade:  "))
+quizGradeThree = float(input("Please enter the third quiz grade:  "))
+quizGradeFour = float(input("Please enter the fourth quiz grade:  "))
+quizGradeFive = float(input("Please enter the fifth grade:  "))
+quizGradeSix = float(input("Please enter the sixth grade:  "))
+participationGradeMax = float(input("Please enter the total possible participation grade:  "))
+participationWeight = float(input("Please enter the participation weight in decimal form:  "))
+participationGrade = float(input("Please enter the participation grade:  "))
+projectGradeMax = float(input("Please enter the total possible project grade:  "))
+projectWeight = float(input("Please enter the project weight in decimal form:  "))
+projectGradeOne = float(input("Please enter the first project grade:  "))
+projectGradeTwo = float(input("Please enter the second project grade:  "))
+projectGradeThree = float(input("Please enter the third project grade:  "))
+projectGradeFour = float(input("Please enter the fourth project grade:  "))
+projectGradeFive = float(input("Please enter the fifth project grade:  "))
+projectGradeSix = float(input("Please enter the sixth project grade:  "))
+testGradeMax = float(input("Please enter the total possiple test grade:  "))
+testWeight = float(input("Please enter the test weight in decimal form:  "))
+testGradeOne = float(input("Please enter the first test grade:  "))
+testGradeTwo = float(input("Please enter the second test grade:  "))
+testGradeThree = float(input("Please enter the third test grade:  "))
+testGradeFour = float(input("Please enter the fourth test grade:  "))
+
+quizGradeTotal = (quizGradeOne + quizGradeTwo + quizGradeThree + quizGradeFour + quizGradeFive + quizGradeSix) 
+
+quizGradeTotal2 = (quizGradeTotal / quizGradeMax)
+
+quizWeight = (quizWeight * 100)
+
+quizGradeFinal = (quizGradeTotal2 * quizWeight)
+
+participationGradeTotal = (participationGrade / participationGradeMax)
+
+participationWeight = (participationWeight * 100)
+
+participationGradeFinal = (participationGradeTotal * participationWeight)
+
+
+projectGradeTotal = (projectGradeOne + projectGradeTwo + projectGradeThree + projectGradeFour + projectGradeFive + projectGradeSix) 
+
+projectGradeTotal2 = (projectGradeTotal / projectGradeMax)
+
+projectWeight = (projectWeight * 100)
+
+projectGradeFinal = (projectGradeTotal2 * projectWeight)
+
+testGradeTotal = (testGradeOne + testGradeTwo + testGradeThree + testGradeFour) 
+
+testGradeTotal2 = (testGradeTotal / testGradeMax)
+
+testWeight = (testWeight * 100)
+
+testGradeFinal = (testGradeTotal2 * testWeight)
+
+
+finalGrade = (testGradeFinal + projectGradeFinal + participationGradeFinal + quizGradeFinal)
+
+
+
+
+
+
+print(studentName + "'s Grades are:  ")
+
+print("Overall Quiz Grade:  " + str(quizGradeFinal))
+
+
+print("Overall Participation Grade:  " + str(participationGradeFinal))
+
+print("Overall Project Grade:  " + str(projectGradeFinal))
+
+print("Overall Test Grade:  " + str(testGradeFinal))
+
+print("Final Grade:  " + str(finalGrade))
+
+if(finalGrade>=90):
+  (print("Your Grade:  A"))
+elif(finalGrade>80 and finalGrade<90):
+  (print("Your Grade:  B"))
+elif(finalGrade>70 and finalGrade<80):
+  (print("Your Grade:  C"))
+elif(finalGrade>60 and finalGrade<70):
+  (print("Your Grade:  D"))
+elif(finalGrade<60):
+  (print("Your Grade:  F"))
+
+
